@@ -5,7 +5,7 @@ executer le code dans un environnement controlé préconfiguré,
 et Visual Studio Code, qui en plus de disposer d'extensions pour integrer Git / Github, 
 permettra de se connecter au conteneur de développement Docker.
 
-Téléchargez le fichier de configuration approprié directement depuis GitHub.com (bouton vert "Code", puis ".zip"), et suivez les instructions ci-dessous.
+Téléchargez le fichier de configuration approprié directement depuis GitHub.com (bouton vert "Code", puis ".zip"), et suivez les instructions de la section appropriée.
 Une fois VS Code installé, ouvrez un nouveau dossier, attachez-y un terminal, et clonez-y le répertoire distant avec :
 ```
 git clone git@github.com:esteban-peregrina/polytech-s5-ige-ecosysteme.git .
