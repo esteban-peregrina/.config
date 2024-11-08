@@ -10,7 +10,7 @@ Une fois VS Code installé, ouvrez un nouveau dossier, attachez-y un terminal, e
 ```
 git clone git@github.com:esteban-peregrina/polytech-s5-ige-ecosysteme.git .
 ```
-Ensuite, installez-y le dossier '.devcontainer.json' depuis [ce lien](https://github.com/esteban-peregrina/.devcontainer.json.git)
+Ensuite, installez-y le dossier '.devcontainer.json' depuis [ce lien](https://github.com/esteban-peregrina/.devcontainer.git)
 Renommez le dossier pour que le nom corresponde à celui présent dans le fichier '.gitignore'
 Puis dans VS Code, ajoutez l'extension "Dev Containers".
 Enfin, cliquez sur l'option "><" en bas a droite de VS Code, et dans le menu, sélectionnez "Reopen in container".
