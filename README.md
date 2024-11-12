@@ -45,9 +45,9 @@ Vous pouvez aussi utiliser
 Sur les distributions Linux usuelles, le script de configuration peut être lancé sans installation préalable.
 
 # Démarrer l'environnement de développement
-Une fois VS Code installé, créé un dossier de travail, attachez-y un terminal, et clonez-y le répertoire distant avec :
+Une fois VS Code installé, créé un dossier de travail, attachez-y un terminal, et clonez-y le répertoire distant du projet Ecosysteme avec :
 ```
-git clone git@github.com:esteban-peregrina/polytech-s5-ige-ecosysteme.git .
+git clone https://github.com/esteban-peregrina/polytech-s5-ige-ecosysteme.git .
 ```
 Ensuite, installez-y le dossier '.devcontainer.json', ici encore directemment depuis [ce dépôt distant](https://github.com/esteban-peregrina/.devcontainer.git).
 
