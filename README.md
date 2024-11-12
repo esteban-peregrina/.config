@@ -36,9 +36,9 @@ Set-ExecutionPolicy Restricted
 
 ## MacOS
 Sur MacOS, il est nécessaire d'installer [Homebrew](https://brew.sh) pour utiliser le script de configuration.
-Vous pouvez aussi utiliser 
+Vous pouvez pour se faire lancer dans un terminal : 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ## Linux
