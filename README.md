@@ -1,5 +1,5 @@
 Dans l'objectif de simplifier le développement collaboratif, il est commode de mettre en place un environnement de travail reposant sur l'utilisation de Git et Docker.
-Pour faciliter l'intégration de ces deux outils, il est conseillé d'utiliser Visual Studio Code.
+Par ailleurs, pour faciliter l'intégration de ces deux outils, il est conseillé d'utiliser Visual Studio Code.
 
 Ce dépôt distant contient les fichiers de configuration nécessaires à l'installation de cet environnement.
 En bref, Git, allié à GitHub.com, permet de programmer en collaboration sans risquer d'écraser les modifications des autres lors des synchronisations avec le dépôt contenant le code source.
