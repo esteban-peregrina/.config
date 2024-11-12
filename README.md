@@ -34,7 +34,7 @@ Set-ExecutionPolicy Restricted
 >
 > L'installation de Docker s'est révélée parfois particulièrement longue. Patientez autour de 15 minutes maximum.
 
-Si tout c'est bien passé, vous pouvez passer à section suivante.
+Si tout s'est bien passé, vous pouvez passer à section suivante.
 
 ## MacOS
 Sur MacOS, il est nécessaire d'installer [Homebrew](https://brew.sh) pour utiliser le script de configuration.
