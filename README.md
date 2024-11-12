@@ -54,4 +54,10 @@ Ensuite, installez-y le dossier '.devcontainer.json', ici encore directemment de
 Renommez le dossier pour que le nom corresponde à celui présent dans le fichier '.gitignore'.
 
 Puis dans VS Code, ajoutez l'extension "Dev Containers".
-Enfin, cliquez sur l'option "><" en bas a droite de VS Code, et dans le menu, sélectionnez "Reopen in container".
+Enfin, cliquez sur l'option "><" en bas a droite de VS Code, et dans le menu, sélectionnez "Reopen in container". VS Code vous proposera d'afficher les logs.
+
+Dans VS Code, Pour vérifier que vous êtes bien dans un Ubuntu, ajouter un terminal au conteneur, puis lancez :
+```bash
+lsb_release -a
+```
+La commande devrait renvoyer le nom ainsi que la version de la distribution.
