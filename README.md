@@ -34,24 +34,33 @@ Set-ExecutionPolicy Restricted
 >
 > L'installation de Docker s'est révélée parfois particulièrement longue. Patientez autour de 15 minutes maximum.
 
+Si tout c'est bien passé, vous pouvez passer à section suivante.
+
 ## MacOS
 Sur MacOS, il est nécessaire d'installer [Homebrew](https://brew.sh) pour utiliser le script de configuration.
 Vous pouvez pour se faire lancer dans un terminal : 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+Ensuite, naviguez jusqu'au fichier de configuration `macos.rb`, ouvrez un terminal depuis ce dossier, et lancez :
+```bash
+brew bundle --file macos.rb
+```
+Si tout c'est bien passé, vous pouvez passer à section suivante.
 
 ## Linux
 Sur les distributions Linux usuelles, le script de configuration peut être lancé sans installation préalable.
 
 # Démarrer l'environnement de développement
-Une fois VS Code installé, créé un dossier de travail, attachez-y un terminal, et clonez-y le répertoire distant du projet Ecosysteme avec :
+Pour commencer, lancez Docker Desktop, désormais installé sur votre système d'exploitation.
+Ensuite, ouvrez Visual Studio Code, et dans l'onglet `Fichier`, sélectionnez "Ouvrir le dossier...", puis créez un dossier de travail.
+Attachez un terminal au dossier depuis l'onglet `Terminal`, et clonez-y le répertoire distant du projet d'ecosysteme avec :
 ```
 git clone https://github.com/esteban-peregrina/polytech-s5-ige-ecosysteme.git .
 ```
-Ensuite, installez-y le dossier '.devcontainer.json', ici encore directemment depuis [ce dépôt distant](https://github.com/esteban-peregrina/.devcontainer.git).
+Ensuite, installez le dossier '.devcontainer.json', ici encore directemment depuis [ce dépôt distant](https://github.com/esteban-peregrina/.devcontainer.git).
 
-Renommez le dossier pour que le nom corresponde à celui présent dans le fichier '.gitignore'.
+Renommez le dossier pour que le nom corresponde à celui présent dans le fichier '.gitignore', et déplacez le dans votre dossier de travail (à côté des dossiers `headers` et `sources` entre-autres).
 
 Puis dans VS Code, ajoutez l'extension "Dev Containers".
 Enfin, cliquez sur l'option "><" en bas a droite de VS Code, et dans le menu, sélectionnez "Reopen in container". VS Code vous proposera d'afficher les logs.
@@ -61,3 +70,13 @@ Dans VS Code, Pour vérifier que vous êtes bien dans un Ubuntu, ajouter un term
 lsb_release -a
 ```
 La commande devrait renvoyer le nom ainsi que la version de la distribution.
+
+Vous pouvez désormais compiler le projet avec :
+```bash
+make setup
+make rebuild
+````
+Puis lancer l'éxécutable créé avec :
+```bash
+.\program
+```
