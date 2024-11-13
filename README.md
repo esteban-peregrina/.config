@@ -46,7 +46,7 @@ Ensuite, naviguez jusqu'au fichier de configuration `macos.rb`, ouvrez un termin
 ```bash
 brew bundle --file macos.rb
 ```
-Si tout c'est bien passé, vous pouvez passer à section suivante.
+Si tout c'est bien passé, vous pouvez passer à la section suivante.
 
 ## Linux
 Sur les distributions Linux usuelles, le script de configuration peut être lancé sans installation préalable.
