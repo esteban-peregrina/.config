@@ -34,7 +34,7 @@ Set-ExecutionPolicy Restricted
 >
 > L'installation de Docker s'est révélée parfois particulièrement longue. Patientez autour de 15 minutes maximum.
 
-Si tout s'est bien passé, vous pouvez passer à section suivante.
+Si tout s'est bien passé, vous pouvez passer à la section suivante.
 
 ## MacOS
 Sur MacOS, il est nécessaire d'installer [Homebrew](https://brew.sh) pour utiliser le script de configuration.
@@ -46,10 +46,12 @@ Ensuite, naviguez jusqu'au fichier de configuration `macos.rb`, ouvrez un termin
 ```bash
 brew bundle --file macos.rb
 ```
-Si tout c'est bien passé, vous pouvez passer à la section suivante.
+Si tout s'est bien passé, vous pouvez passer à la section suivante.
 
 ## Linux
 Sur les distributions Linux usuelles, le script de configuration peut être lancé sans installation préalable.
+
+Si tout s'est bien passé, vous pouvez passer à la section suivante.
 
 # Démarrer l'environnement de développement
 Pour commencer, lancez Docker Desktop, désormais installé sur votre système d'exploitation.
