@@ -11,7 +11,23 @@ Pour commencer, téléchargez le contenu de ce dépôt distant directement depui
 Une fois le dossier compressé téléchargé, extrayez-le dans un répertoire quelconque, puis référez-vous à la section appropriée à votre système d'exploitation :
 
 ## Windows
-Sur Windows, il est nécessaire d'installer [Winget](https://learn.microsoft.com/fr-fr/windows/package-manager/winget/) pour exécuter le script de configuration.
+Avant toute chose, assurez-vous que votre système d'exploitation supporte le [Sous-système Windows pour Linux](https://learn.microsoft.com/fr-fr/windows/wsl/install).
+Si c'est le cas, lancez dans un terminal les commandes suivantes :
+```powershell
+wsl --install
+```
+> ⚠️ Remarque
+>
+> Il est parfois nécessaire d'activer la virtualisation dans le BIOS de votre système pour permettre à WSL 2 de fonctionner.
+
+Une fois WSL installé, redémarrez votre machine puis, dans un terminal, vérifiez qu'une distribution Linux a bien été installée avec :
+```powershell
+wsl -l -v
+```
+
+Vous pouvez désormais passer aux étapes ci-dessous.
+
+Pour exécuter le script de configuration, il est d'abord nécessaire d'installer [Winget](https://learn.microsoft.com/fr-fr/windows/package-manager/winget/).
 Aujourd'hui, ce gestionnaire de paquets est installé automatiquement avec le *Programme d'installation d'applications*, lui-même compris dans les dernières versions de Windows.
 Exécutez Powershell **en tant qu'administrateur**, naviguez jusqu'au dossier de configuration contenant le fichier `windows.ps1`, puis entrez :
 ```powershell
@@ -54,7 +70,9 @@ Sur les distributions Linux usuelles, le script de configuration peut être lanc
 Si tout s'est bien passé, vous pouvez passer à la section suivante.
 
 # Démarrer l'environnement de développement
-Pour commencer, lancez Docker Desktop, désormais installé sur votre système d'exploitation.
+Pour commencer, redémarrez votre machine pour appliquer les modifications.
+
+Puis, lancez Docker Desktop, désormais installé sur votre système d'exploitation.
 Ensuite, ouvrez Visual Studio Code, et dans l'onglet `Fichier`, sélectionnez "Ouvrir le dossier...", puis créez un dossier de travail.
 Attachez un terminal au dossier depuis l'onglet `Terminal`, et clonez-y le répertoire distant du projet d'ecosysteme avec :
 ```
